@@ -1,0 +1,40 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' Force top-to-bottom layout
+top to bottom direction
+
+' Abstract Base Class
+abstract class SmartDevice {
+    + name: str
+    + is_on: bool
+    + wifi_connected: bool
+
+    + connect_to_wifi(network_name: str)
+    + turn_on() <<abstract>>
+    + turn_off()
+}
+
+' Child Classes
+class SmartLight {
+    + turn_on()
+}
+
+class SmartSpeaker {
+    + turn_on()
+}
+
+class SmartThermostat {
+    - __temperature: int
+
+    + turn_on()
+    + set_temperature(new_temp: int)
+    + get_temperature(): int
+}
+
+' Inheritance (force downward arrows)
+SmartDevice <|-- SmartLight
+SmartDevice <|-- SmartSpeaker
+SmartDevice <|-- SmartThermostat
+
+@enduml
