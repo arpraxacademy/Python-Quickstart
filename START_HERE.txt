@@ -1,0 +1,15 @@
+WELCOME TO THE PYTHON FAST TRACK!
+Arprax Academy
+
+HOW TO USE THESE FILES:
+1. Unzip this folder to your Desktop or Documents.
+2. Open PyCharm.
+3. Select "Open" and select this folder.
+4. If PyCharm asks to create a Virtual Environment, say "Yes" (or OK).
+
+FILES INCLUDED:
+- main.py: The core logic we wrote in the video.
+- /data: The example data files.
+
+NEED HELP?
+Watch the full tutorial here: https://youtu.be/U928X3D9QgE
